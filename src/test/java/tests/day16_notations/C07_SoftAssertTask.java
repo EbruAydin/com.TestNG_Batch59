@@ -1,4 +1,4 @@
-package day16_notations;
+package tests.day16_notations;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -47,7 +47,7 @@ public class C07_SoftAssertTask extends TestBase {
                 sendKeys("password").
                 sendKeys(Keys.TAB).
                 sendKeys(Keys.TAB).
-        sendKeys(Keys.ENTER).
+                sendKeys(Keys.ENTER).
                 perform();
         driver.navigate().back();
 
@@ -75,7 +75,7 @@ public class C07_SoftAssertTask extends TestBase {
         // "Eurozone (euro)","Great Britain (pound)","Hong Kong (dollar)","Japan (yen)","Mexico (peso)",
         // "Norway (krone)","New Zealand (dollar)","Sweden (krona)","Singapore (dollar)","Thailand (baht)"
 
-        List<String> ulkeler = new ArrayList<String>(Arrays.asList("Select One","Australia (dollar)", "Canada (dollar)", "Switzerland (franc)", "China (yuan)", "Denmark (krone)",
+        List<String> ulkeler = new ArrayList<String>(Arrays.asList("Select One", "Australia (dollar)", "Canada (dollar)", "Switzerland (franc)", "China (yuan)", "Denmark (krone)",
                 "Eurozone (euro)", "Great Britain (pound)", "Hong Kong (dollar)", "Japan (yen)", "Mexico (peso)",
                 "Norway (krone)", "New Zealand (dollar)", "Sweden (krona)", "Singapore (dollar)", "Thailand (baht)"));
 
@@ -91,6 +91,18 @@ public class C07_SoftAssertTask extends TestBase {
         softAssert.assertEquals(optionListString, ulkeler, "eslesme dogru");
 
         softAssert.assertAll();
+
+        /*
+        Berk'in yolu
+        List<String> expectedList = new ArrayList<String>(Arrays.asList("Select One", "Australia (dollar)", "Canada (dollar)", "Switzerland (franc)", "China (yuan)",
+                "Denmark (krone)", "Eurozone (euro)", "Great Britain (pound)", "Hong Kong (dollar)", "Japan (yen)", "Mexico (peso)", "Norway (krone)",
+                "New Zealand (dollar)", "Sweden (krona)", "Singapore (dollar)", "Thailand (baht)"));
+        System.out.println(expectedList);
+        List<WebElement> optionList = select.getOptions();
+        for (int i = 0; i < optionList.size(); i++) {
+            for (int j = 0; j < expectedList.size(); j++) {
+                softAssert.assertTrue(expectedList.get(j).equals(optionList.get(i).getText()));
+         */
     }
 
 }
