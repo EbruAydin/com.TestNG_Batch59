@@ -19,7 +19,7 @@ public class C03_PageClassKullanimi {
         //giris yapilamadigini test edin
 
         FacebookPage facebookPage=new FacebookPage();
-        // facebook anasayfaya gidin
+        // facebook anasayaya gidin
         Driver.getDriver().get("https://www.facebook.com");
         // cikarsa cookies kabul edin
         facebookPage.cookieButonu.click();

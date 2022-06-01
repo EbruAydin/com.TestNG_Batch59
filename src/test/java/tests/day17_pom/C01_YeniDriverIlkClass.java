@@ -14,7 +14,7 @@ public class C01_YeniDriverIlkClass {
        driver----------->OUT
         */
 
-    @Test
+    @Test(groups="grup1")
     public void test01(){
         Driver.getDriver().get("http://wwww.amazon.com");
         Driver.getDriver().get("http://www.bestbuy.com");

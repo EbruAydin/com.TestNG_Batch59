@@ -10,6 +10,7 @@ public class AmazonPage {
     /*
     Page yapinca hemen constructor olustururuz ASLA vakit kaybetme
     buradaki this ifadesi bizim java'da kullandigimiz this. islevini goruyor
+
      */
 
     public AmazonPage(){
