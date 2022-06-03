@@ -8,7 +8,7 @@
     Eger calisacak specific methodlari belirtmek istersek include, calismayacak specific
     methodlari belirtmek istersek exclude keyword'ler kullanilir.
 
-    suite tag'inin icine yazilacak verbase attribute konsolda cikan mesajlari daha az veya
+    suite tag'inin icine yazilacak verbose attribute konsolda cikan hata mesajlari daha az veya
     daha cok olmasini belirler.
 
     1 en az 10 en coktur.
